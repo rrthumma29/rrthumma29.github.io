@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rohan Thumma | Data Engineer & AI Developer</title>
-<meta name="description" content="Rohan Thumma — Data Engineer and AI Developer at RPI. ACM-published researcher, cloud systems builder (AWS, Azure, GCP), and agentic AI developer. Open to full-time roles in software engineering, data engineering, and AI.">
-<meta property="og:title" content="Rohan Thumma | Data Engineer & AI Developer">
-<meta property="og:description" content="ACM-published researcher and dual-degree RPI graduate. Building at the intersection of data engineering, machine learning, and agentic AI systems.">
+<title>Rohan Thumma | Software Engineer & Data Scientist</title>
+<meta name="description" content="Rohan Thumma — Software Engineer and Data Scientist at RPI. ACM-published researcher who has built data pipelines at 100GB+ daily scale across AWS, Azure, and GCP. Open to full-time roles in software engineering, data engineering, and AI.">
+<meta property="og:title" content="Rohan Thumma | Software Engineer & Data Scientist">
+<meta property="og:description" content="ACM-published researcher and RPI graduate. BS in Computational Biology — now completing an MBA in AI & Advanced Computing at RPI's Lally School of Management.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="Pro_Profile_pic_web.jpg">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='5' fill='%230f1f3d'/><text x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23c9a84c' text-anchor='middle' font-weight='400'>RT</text></svg>">
@@ -179,7 +179,7 @@
     opacity: 0; animation: fadeUp 0.5s ease forwards;
   }
   .exp-item:first-child { border-top: 1px solid rgba(255,255,255,0.08); }
-  .exp-meta {}
+
   .exp-date {
     font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase;
     color: var(--gold); margin-bottom: 6px;
@@ -189,7 +189,7 @@
     font-size: 18px; color: rgba(240,236,228,0.9); font-weight: 400;
   }
   .exp-loc { font-size: 12px; color: rgba(240,236,228,0.35); margin-top: 4px; }
-  .exp-content {}
+
   .exp-role {
     font-size: 15px; font-weight: 500; color: #f0ece4;
     margin-bottom: 16px;
@@ -277,6 +277,20 @@
     border-color: rgba(201,168,76,0.25);
     color: rgba(240,236,228,0.45);
   }
+  .project-bullets {
+    list-style: none; display: flex; flex-direction: column;
+    gap: 10px; flex: 1; margin-bottom: 20px;
+  }
+  .project-bullets li {
+    font-size: 14px; color: var(--muted);
+    line-height: 1.65; padding-left: 16px; position: relative;
+  }
+  .project-bullets li::before {
+    content: ''; position: absolute; left: 0; top: 10px;
+    width: 5px; height: 1px; background: var(--gold);
+  }
+  .project-card.featured .project-bullets li { color: rgba(240,236,228,0.55); }
+
   .project-link {
     display: inline-flex; align-items: center; gap: 6px;
     margin-top: 16px; font-size: 12px; letter-spacing: 0.06em;
@@ -493,7 +507,7 @@
 <section class="hero" id="home">
   <div class="hero-tag">Available for full-time roles</div>
   <h1>Rohan<br><em>Thumma</em></h1>
-  <p class="hero-sub">Dual-degree RPI graduate in AI & Data Engineering — ACM-published researcher, cloud systems builder, and agentic AI developer with production deployments across AWS, Azure, and GCP.</p>
+  <p class="hero-sub">RPI graduate in Computational Biology, now finishing an MBA in AI & Advanced Computing. Published at ACM, built data pipelines at 100GB+ daily scale, and shipped full-stack apps using AI-assisted development across AWS, Azure, and GCP.</p>
   <div class="hero-pills">
     <span class="pill">Python · SQL · FastAPI</span>
     <span class="pill">AWS · Azure · GCP</span>
@@ -530,9 +544,9 @@
       <img src="Pro_Profile_pic_web.jpg" alt="Rohan Thumma" class="about-photo">
     </div>
     <div class="about-text">
-      <p>I'm a dual-degree student at <strong>Rensselaer Polytechnic Institute</strong>, pursuing a BS in Computational Biology alongside an MBA specializing in AI & Advanced Computing. I sit at the intersection of data engineering, applied ML, and full-stack development.</p>
-      <p>I've built production-grade data pipelines processing 100GB+ daily, engineered cloud-native analytics infrastructure, and developed full-stack applications end-to-end using agentic AI tooling. I'm a published researcher with a co-authored paper presented at ACM ICMHI 2024 in Yokohama.</p>
-      <p>I'm actively seeking entry-level roles in <strong>software development</strong>, <strong>data analytics</strong>, and <strong>technology consulting</strong> where I can bring both technical depth and strategic thinking.</p>
+      <p>I'm a graduate of <strong>Rensselaer Polytechnic Institute</strong> with a BS in Computational Biology, now finishing my MBA in AI & Advanced Computing at the Lally School of Management. My work spans data engineering, applied ML, and full-stack development.</p>
+      <p>I've built production data pipelines processing over 100GB daily, put together cloud analytics infrastructure from scratch, and shipped full-stack apps end-to-end. I also co-authored a research paper accepted and presented at ACM ICMHI 2024 in Yokohama.</p>
+      <p>I'm looking for full-time roles in <strong>software development</strong>, <strong>data analytics</strong>, or <strong>technology consulting</strong> where I can put both my technical and business skills to use.</p>
     </div>
     <div class="about-details">
       <div class="detail-row">
@@ -581,8 +595,10 @@
       <div class="exp-content">
         <div class="exp-role">Master's Course Assistant — Data Science / Xinformatics</div>
         <ul class="exp-bullets">
-          <li>Supported instruction on data architecture, metadata standards (METS, ESML, netCDF), and reproducible scientific workflows, focusing on lifecycle-aware data management and scalable research data pipelines.</li>
-          <li>Evaluated Python assignments implementing ML pipelines, ETL workflows, metadata encoding, and provenance tracking — reinforcing best practices in data engineering, pipeline design, and reproducible computing systems.</li>
+          <li>Supported graduate-level instruction on data architecture, metadata standards (METS, ESML, netCDF), and reproducible scientific workflows, with a focus on research data management and building pipelines that hold up at scale.</li>
+          <li>Helped students build Python and R-based ML pipelines covering ETL workflows, metadata encoding, and provenance tracking across complex, multi-format research datasets.</li>
+          <li>Graded assignments involving ML modeling, statistical analysis, and reproducible computing, giving feedback on data engineering practices and pipeline design.</li>
+          <li>Ran course labs and led discussions on scientific data workflows, analysis techniques, and how to structure data infrastructure for long-term research use.</li>
         </ul>
       </div>
     </div>
@@ -595,8 +611,10 @@
       <div class="exp-content">
         <div class="exp-role">System Analyst</div>
         <ul class="exp-bullets">
-          <li>Engineered cloud-native ETL pipelines and queue orchestration systems using Power Automate and Azure SQL, leveraging Microsoft Copilot for prompt-driven workflow generation and validation — reducing processing errors by 20%.</li>
-          <li>Architected scalable analytics infrastructure and Power BI reporting layers to surface claim-error patterns across billing workflows, utilizing Copilot-assisted DAX query generation — reducing manual reconciliation time by 40%.</li>
+          <li>Built cloud-native ETL pipelines and queue orchestration systems using Power Automate and Azure SQL, using Microsoft Copilot with structured prompts to automate healthcare claims data workflows and cut processing errors by 20%.</li>
+          <li>Designed Power BI reporting infrastructure to surface claim-error patterns across billing workflows, using Copilot-assisted DAX query generation and pipeline optimization to reduce reconciliation time by 40%.</li>
+          <li>Built Copilot agent workflows to automate validation and routing of CMS and UB healthcare forms, cutting down on manual document processing across billing pipelines.</li>
+          <li>Worked closely with engineering and business teams to scope and ship automation solutions, helping internal teams move away from manual processes and toward data-driven workflows.</li>
         </ul>
       </div>
     </div>
@@ -609,8 +627,10 @@
       <div class="exp-content">
         <div class="exp-role">Data Analytics Intern</div>
         <ul class="exp-bullets">
-          <li>Engineered secure cloud ingestion pipelines integrating enterprise server infrastructure with Google BigQuery, processing 100GB+ daily call-center datasets to support distributed analytics and scalable operational reporting.</li>
-          <li>Architected Tableau analytics infrastructure and optimized warehouse data models with automated refresh pipelines and query performance tuning — reducing manual reporting workloads by 50% and enabling real-time KPI visibility.</li>
+          <li>Built secure cloud ingestion pipelines connecting Walmart's server infrastructure to Google BigQuery, processing 100GB+ of daily call-center data to support distributed analytics and reporting.</li>
+          <li>Designed and optimized data models and warehouse queries to keep analytics fast as data volumes grew across large call-center datasets.</li>
+          <li>Optimized Tableau dashboards with automated refresh pipelines and query tuning, cutting manual reporting workloads by 50% and giving teams real-time KPI visibility.</li>
+          <li>Worked with engineering and analytics teams to make reporting infrastructure easier to use, which reduced the time teams spent pulling their own numbers.</li>
         </ul>
       </div>
     </div>
@@ -642,7 +662,7 @@
       <div class="skill-tags">
         <span class="skill-tag">Python</span>
         <span class="skill-tag">SQL / T-SQL</span>
-        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">JavaScript / TypeScript</span>
         <span class="skill-tag">R</span>
       </div>
     </div>
@@ -674,9 +694,10 @@
         <span class="skill-tag">Azure</span>
         <span class="skill-tag">GCP</span>
         <span class="skill-tag">Git / GitHub</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">CI/CD</span>
         <span class="skill-tag">Linux / Ubuntu</span>
         <span class="skill-tag">SSH</span>
-        <span class="skill-tag">Docker</span>
       </div>
     </div>
     <div class="skill-card fade-up">
@@ -697,7 +718,9 @@
         <span class="skill-tag">VS Code</span>
         <span class="skill-tag">pgAdmin</span>
         <span class="skill-tag">RStudio</span>
-        <span class="skill-tag">PuTTY</span>
+        <span class="skill-tag">Postman</span>
+        <span class="skill-tag">Jupyter</span>
+        <span class="skill-tag">Swagger</span>
         <span class="skill-tag">Claude Code</span>
       </div>
     </div>
@@ -713,7 +736,12 @@
       <div class="project-num">01</div>
       <div class="project-name">NutriTrack — Full-Stack Social Nutrition App</div>
       <div class="project-period">March 2026 – Present</div>
-      <p class="project-desc">Architected a 13-table relational schema and production-grade REST API using FastAPI and SQLAlchemy 2.0 — implementing JWT authentication, Pydantic validation, and 51 endpoints across 7 modular routers. Engineered background task processing for a gamification engine covering XP awards, streak tracking, level progression, and 17 achievements — with an idempotent XP ledger and 92 USDA-sourced seeded foods. Built end-to-end via agentic AI-assisted development (Claude Code in VS Code) — delivering auth, food logging, gamification, and a social feed in a Dockerized app verified by a 30-assertion smoke test.</p>
+      <ul class="project-bullets">
+        <li>Designed a 13-table relational schema covering users, food logs, goals, social connections, and achievements, then built a production REST API using FastAPI and SQLAlchemy 2.0 with JWT auth, Pydantic validation, and 51 endpoints across 7 modular routers; deployed via Docker.</li>
+        <li>Built background task processing for a gamification engine with XP awards, streak tracking, level progression, and 17 unlockable achievements, backed by an idempotent XP ledger (no duplicate awards) and seeded with 92 USDA-sourced foods.</li>
+        <li>Built a social feed where users follow each other, view activity, and share nutrition milestones, tying together the auth, food logging, and gamification layers.</li>
+        <li>Developed the entire app in VS Code using AI-augmented development, making all decisions across data modeling, API design, and gamification logic. Core backend verified by a 30-assertion smoke test suite covering auth, logging, and edge cases.</li>
+      </ul>
       <div class="project-techs">
         <span class="project-tech">FastAPI</span>
         <span class="project-tech">SQLAlchemy</span>
@@ -723,13 +751,18 @@
         <span class="project-tech">Python</span>
         <span class="project-tech">Claude Code</span>
       </div>
-      <p style="margin-top:14px; font-size:12px; color:rgba(240,236,228,0.4); font-style:italic;">Currently in active development — link available upon completion.</p>
+      <p style="margin-top:14px; font-size:12px; color:rgba(240,236,228,0.4); font-style:italic;">Still in development — link coming soon.</p>
     </div>
     <div class="project-card fade-up">
       <div class="project-num">02</div>
       <div class="project-name">Fiduciary AI Trust Platform</div>
       <div class="project-period">Jan 2026 – Present</div>
-      <p class="project-desc">Engineered a 3-condition between-subjects experiment comparing human vs. AI advisor trust — built full stimulus suite (branded website, Synthesia avatar videos, Qualtrics behavioral instrumentation) using agentic AI development. Piloting a perception manipulation-check before deploying to 200+ students, with a follow-on study targeting wealth management professionals; owning full lifecycle from experimental design through technical delivery.</p>
+      <ul class="project-bullets">
+        <li>Designed a 3-condition between-subjects experiment (human advisor, AI advisor, control) to study how people form trust and make financial decisions when advised by a human versus an AI.</li>
+        <li>Built the full stimulus suite: a branded wealth management website, Synthesia AI avatar videos to standardize advisory interactions across conditions, and a Qualtrics survey with behavioral telemetry and condition tagging.</li>
+        <li>Built an analytics pipeline to track trust scores, behavioral responses, and decision outcomes across conditions, giving a quantitative view of how people respond differently to AI versus human financial guidance.</li>
+        <li>Currently piloting a perception manipulation-check before rolling out to 200+ students, with a follow-on study planned for wealth management professionals. Responsible for the full project from experimental design to technical delivery.</li>
+      </ul>
       <div class="project-techs">
         <span class="project-tech">Qualtrics</span>
         <span class="project-tech">Synthesia</span>
@@ -737,13 +770,18 @@
         <span class="project-tech">HTML/CSS</span>
         <span class="project-tech">Experimental Design</span>
       </div>
-      <p style="margin-top:14px; font-size:12px; color:var(--muted); font-style:italic;">Currently in active development — link available upon completion.</p>
+      <p style="margin-top:14px; font-size:12px; color:var(--muted); font-style:italic;">Still in development — link coming soon.</p>
     </div>
     <div class="project-card fade-up">
       <div class="project-num">03</div>
       <div class="project-name">Sub-Saharan Cholera Analysis</div>
       <div class="project-period">Sep 2023 – Mar 2024</div>
-      <p class="project-desc">Wrangled 15+ years of multi-format public health data (netCDF precipitation, World Bank GDP, shapefile geospatial) using Python (pandas, scipy), resolving format incompatibilities via custom HDF5-to-CSV conversion scripts. Applied scikit-learn K-Means and Mean Shift clustering alongside Spearman regression (~0.70) to model cholera outbreak drivers; visualized findings geospatially with geopandas / matplotlib. Co-authored and presented an ACM ICMHI publication in Yokohama, Japan — DOI: 10.1145/3673971.3673996</p>
+      <ul class="project-bullets">
+        <li>Cleaned and merged 15+ years of multi-format public health data (netCDF precipitation from NOAA/GPCP, World Bank GDP CSVs, Johns Hopkins shapefile outbreak data) using pandas and scipy, writing custom HDF5-to-CSV scripts to handle format mismatches across 25 countries.</li>
+        <li>Built a multivariable regression pipeline in scikit-learn and scipy to model cholera severity against precipitation and GDP, reaching a Spearman correlation of ~0.70. Rainfall drove roughly 215 additional cases per mm/day; GDP had a statistically insignificant effect.</li>
+        <li>Applied K-Means (k=4, Elbow Method) and Mean Shift clustering to group regions by precipitation and cholera incidence, using both algorithms together to flag outlier countries where conflict or infrastructure gaps skewed the data.</li>
+        <li>Made geospatial maps, time-series overlays, and statistical charts using matplotlib and geopandas. Co-authored and presented the paper at ACM ICMHI 2024 in Yokohama, Japan. DOI: 10.1145/3673971.3673996</li>
+      </ul>
       <div class="project-techs">
         <span class="project-tech">Python</span>
         <span class="project-tech">Scikit-learn</span>
@@ -756,8 +794,12 @@
     <div class="project-card fade-up">
       <div class="project-num">04</div>
       <div class="project-name">Housing 2.0 — RPI Student Housing Portal</div>
-      <div class="project-period">Aug 2023 – Dec 2023</div>
-      <p class="project-desc">Collaborated with a team to build a next-generation housing portal for RPI students. Leveraged FastAPI's asynchronous capabilities for responsive and efficient data management. Created advanced search algorithms evaluating year of study, group size, dorm preferences, gender, and location to surface ideal housing options — surpassing capabilities of existing university housing portals.</p>
+      <div class="project-period">Aug 2023 – Dec 2024</div>
+      <ul class="project-bullets">
+        <li>Built and tested a FastAPI backend using async request handling so the app could manage multiple concurrent user sessions without blocking.</li>
+        <li>Designed and implemented a multi-criteria matching algorithm that takes student attributes (year of study, group size, dorm preferences, gender, location) and returns ranked housing recommendations for individuals and groups.</li>
+        <li>Worked with the team on backend-frontend integration and API compatibility, writing unit and integration tests to verify algorithm accuracy and catch edge cases.</li>
+      </ul>
       <div class="project-techs">
         <span class="project-tech">FastAPI</span>
         <span class="project-tech">Python</span>

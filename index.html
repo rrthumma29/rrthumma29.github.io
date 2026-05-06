@@ -403,6 +403,7 @@
   .exp-item:nth-child(2) { animation-delay: 0.15s; }
   .exp-item:nth-child(3) { animation-delay: 0.25s; }
   .exp-item:nth-child(4) { animation-delay: 0.35s; }
+  .exp-item:nth-child(5) { animation-delay: 0.45s; }
 
   /* PHOTO */
   .about-grid { grid-template-columns: 200px 1fr 1fr; }
@@ -588,6 +589,22 @@
   <div class="exp-list">
     <div class="exp-item">
       <div class="exp-meta">
+        <div class="exp-date">Jan 2026 – May 2026</div>
+        <div class="exp-company">Quanterion Solutions</div>
+        <div class="exp-loc">Utica, NY (Remote)</div>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Strategy &amp; AI Research Consultant — Internship</div>
+        <ul class="exp-bullets">
+          <li>Built an 8-scenario ML buyer intelligence pipeline using scikit-learn (Gradient Boosting, Stacking Ensemble, RF, SVM, KNN), a 2,000-trial Monte Carlo simulation, permutation importance, K-Means clustering, and PCA to classify defense software modernization buyer urgency across a 10-feature survey rubric. Surfaced a rubric-model disagreement that required human judgment to resolve.</li>
+          <li>Developed a five-step technical debt calculator in HTML/CSS/JS with automated 1–5 urgency scoring and stakeholder-specific output framing, deployed alongside an interactive buyer intelligence dashboard via a multi-branch GitHub Actions CI/CD pipeline to GitHub Pages.</li>
+          <li>Delivered five market research reports covering go-to-market strategy, competitive intelligence, CMMC 2.0 and STTR acquisition pathway analysis, and partner prioritization for a defense tech firm holding an MDA STTR Phase I award targeting Ada/FORTRAN legacy modernization.</li>
+          <li>Collaborated with faculty advisors and client leadership to translate ML findings and market research into actionable BD recommendations, presenting rubric weight adjustments, three-archetype buyer frameworks, and offer-path probability matrices to executive stakeholders.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-meta">
         <div class="exp-date">Sep 2025 – Present</div>
         <div class="exp-company">RPI</div>
         <div class="exp-loc">Troy, NY</div>
@@ -755,6 +772,26 @@
     </div>
     <div class="project-card fade-up">
       <div class="project-num">02</div>
+      <div class="project-name">EV Population Data Warehouse</div>
+      <div class="project-period">Apr 2026 – May 2026</div>
+      <ul class="project-bullets">
+        <li>Designed and implemented a full star schema data warehouse in SQL Server for 112,634 electric vehicle registration records, building a two-stage ingestion pipeline (staging to clean) with data quality filters, type casting, and a custom Python preprocessing script to resolve BULK INSERT parsing failures caused by WKT coordinate strings and pipe-delimited utility fields.</li>
+        <li>Constructed six dimension tables (dimVehicle, dimLocation, dimEVType, dimCAFV, dimUtility, dimDate) and a central fact table with foreign key constraints, manually seeded low-cardinality dimensions, CASE-based surrogate key resolution, and an integer DateKey convention, applying production-grade dimensional modeling patterns throughout.</li>
+        <li>Conducted exploratory data analysis across vehicle make, model year, county, CAFV eligibility, and electric utility dimensions, uncovering that Tesla accounts for 46% of all registrations, BEV registrations grew roughly 980x from the Early Adoption to Mass Market era, and CAFV policy design structurally favors BEV adoption over PHEVs.</li>
+        <li>Delivered a 10-page analytical report following the DCOVA framework with six embedded R visualizations, a full ER diagram, and a public GitHub repository including the SQL pipeline, preprocessing script, and dataset documentation.</li>
+      </ul>
+      <div class="project-techs">
+        <span class="project-tech">T-SQL</span>
+        <span class="project-tech">SQL Server</span>
+        <span class="project-tech">Python</span>
+        <span class="project-tech">R</span>
+        <span class="project-tech">Dimensional Modeling</span>
+        <span class="project-tech">ETL</span>
+      </div>
+      <a href="https://github.com/rrthumma29/EV-Population-Data-Warehouse" target="_blank" class="project-link">View on GitHub ↗</a>
+    </div>
+    <div class="project-card fade-up">
+      <div class="project-num">03</div>
       <div class="project-name">SQL Server Graph Database &amp; Star Schema Data Warehouse</div>
       <div class="project-period">Mar 2026 – Apr 2026</div>
       <ul class="project-bullets">
@@ -774,7 +811,7 @@
       <a href="https://github.com/rrthumma29/SQL-Server-Graph-Database" target="_blank" class="project-link">View on GitHub ↗</a>
     </div>
     <div class="project-card fade-up">
-      <div class="project-num">03</div>
+      <div class="project-num">04</div>
       <div class="project-name">Fiduciary AI Trust Platform</div>
       <div class="project-period">Jan 2026 – Present</div>
       <ul class="project-bullets">
@@ -793,7 +830,7 @@
       <p style="margin-top:14px; font-size:12px; color:var(--muted); font-style:italic;">Still in development — link coming soon.</p>
     </div>
     <div class="project-card fade-up">
-      <div class="project-num">04</div>
+      <div class="project-num">05</div>
       <div class="project-name">Sub-Saharan Cholera Analysis</div>
       <div class="project-period">Sep 2023 – Mar 2024</div>
       <ul class="project-bullets">
@@ -812,7 +849,7 @@
       <a href="https://github.com/ITWSDataScience/Colera_Outbreak_Analysis_Group5_Fall2023" target="_blank" class="project-link">View on GitHub ↗</a>
     </div>
     <div class="project-card fade-up">
-      <div class="project-num">05</div>
+      <div class="project-num">06</div>
       <div class="project-name">Housing 2.0 — RPI Student Housing Portal</div>
       <div class="project-period">Aug 2023 – Dec 2024</div>
       <ul class="project-bullets">
